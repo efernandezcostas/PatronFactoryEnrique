@@ -7,6 +7,7 @@ package com.dam.factorysencilla;
 public class FactoriaDeSalidas {
     public static final int CONSOLA = 1;
     public static final int VENTANA = 2;
+    public static final int IMPRESORA = 3;
     /**
      * Devuelve producto del tipo de la Interface
      * @param type 1: consola, 2:ventana
@@ -21,6 +22,8 @@ public class FactoriaDeSalidas {
             // tipo ventana
             case VENTANA:
                 return new Ventana(msg);
+            case IMPRESORA:
+                return new Impresora(msg);
             // otro tipo
             default:
                 return null;
